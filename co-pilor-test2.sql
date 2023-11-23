@@ -38,6 +38,11 @@ BEGIN
     WHERE ID > @ID;
 END;
 
+-- Create view to get data from Employee table with FirstName, LastName, and Active
+CREATE VIEW EmployeeView AS
+SELECT FirstName, LastName, Active
+FROM Employee;
+
 -- Drop temp table
 DROP TABLE #TempTable;
 
