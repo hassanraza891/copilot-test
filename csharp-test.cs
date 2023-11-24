@@ -18,7 +18,17 @@ public class AccountController : ApiController
         // Create account logic
         try
         {
-            // TODO: Implement account creation logic here
+            var accountCreated = false;
+            //create a for loop to loop through 100 records
+            for (int i = 0; i < 100; i++)
+            {
+                //create a new account
+                var newAccount = new AccountModel
+                {
+                    Username = account.Username,
+                    Password = account.Password
+                };
+            }
 
             // Return success response
             return Ok("Account created successfully");
